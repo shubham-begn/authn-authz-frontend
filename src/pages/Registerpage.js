@@ -23,11 +23,12 @@ function Registerpage() {
   const handleSubmit = async(e) => {
     e.preventDefault();
     const response = await axios.post('http://localhost:3001/v1/user/register', formData);
-    
+
 console.log(response);    console.log(formData);
   };
 
   return (
+    <div className='complete-page'>
     <div className='register-container'>
       <h2>Register</h2>
       <form onSubmit={handleSubmit}>
@@ -95,6 +96,7 @@ console.log(response);    console.log(formData);
         </div>
         <button type="submit">Submit</button>
       </form>
+    </div>
     </div>
   );
 }

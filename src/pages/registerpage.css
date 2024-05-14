@@ -7,6 +7,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    width: 1000px;
+    padding-right: 60px;;
   }
   
   .register-container h2 {
@@ -59,4 +61,11 @@
   .register-container button[type="submit"]:hover {
     background-color: #0056b3;
   }
-  
+  .complete-page {
+    background-color: rgb(35, 33, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100vh; /* Optionally set the height of the container */
+  }

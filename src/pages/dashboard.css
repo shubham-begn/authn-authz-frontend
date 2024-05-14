@@ -1,0 +1,34 @@
+
+.dash-page{
+    background-color: rgb(35, 33, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100vh; /* Optionally set the height of the container */
+}
+
+.content{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    padding: 20px;
+}
+
+.dash-page button {
+    padding: 17px;
+    margin:20px;
+    font-size: 16px;
+    background-color: #e0e9e0;
+    color: rgb(7, 7, 7);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dash-page button:hover {
+    background-color: #45a049;
+  }

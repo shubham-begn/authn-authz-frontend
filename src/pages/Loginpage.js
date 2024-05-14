@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './registerpage.css';
+
 
 function Loginpage() {
   const [formData, setFormData] = useState({
@@ -43,6 +45,7 @@ function Loginpage() {
   
 
   return (
+    <div className='complete-page'>
     <div className='register-container'>
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
@@ -88,6 +91,7 @@ function Loginpage() {
         </div>
         <button type="submit">Submit</button>
       </form>
+    </div>
     </div>
   );
 }

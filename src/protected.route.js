@@ -1,5 +1,4 @@
-import React from 'react';
-import Loginpage from './pages/Loginpage';
+
 import { useCookies } from 'react-cookie';
 
 const ProtectedRoute = ({ children }) => {
@@ -10,7 +9,7 @@ console.log(token);
   const userIsLogged = token; // Your hook to get login status
 
   if (!userIsLogged) {
-    return <Loginpage />;
+    window.location.href = '/login';
   }
 
   return children;
